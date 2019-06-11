@@ -7,7 +7,6 @@ import { Component, OnInit, EventEmitter, Output } from "@angular/core";
 })
 export class AddTodoItemComponent implements OnInit {
   title: string;
-
   @Output() addTodo: EventEmitter<any> = new EventEmitter();
 
   constructor() {}
@@ -19,10 +18,7 @@ export class AddTodoItemComponent implements OnInit {
       title: this.title,
       completed: false
     };
-
-    const input: HTMLInputElement = document.getElementById("add-title-input");
-    input.value = "";
-
     this.addTodo.emit(newTodo);
+    this.title = "";
   }
 }

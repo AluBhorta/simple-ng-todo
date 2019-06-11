@@ -1,5 +1,10 @@
-<div [ngClass]="setClasses()">
+<div
+  class="list-group-item list-group-item-action todo-item"
+  [ngClass]="setClasses()"
+>
   <input (change)="onToggle(todo)" type="checkbox" [checked]="todo.completed" />
   <span>{{ todo.title }}</span>
-  <button (click)="onDeleteClick(todo)">x</button>
+  <button class="btn btn-outline-danger" (click)="onDeleteClick(todo)">
+    x
+  </button>
 </div>

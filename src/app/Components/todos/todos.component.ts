@@ -8,8 +8,8 @@ import { Todo } from "src/models/Todo.model";
 })
 export class TodosComponent implements OnInit {
   todos: Todo[];
-  todosUrl = "https://jsonplaceholder.typicode.com/todos?_limit=20";
-  lastId = 20;
+  lastId = 6;
+  todosUrl = `https://jsonplaceholder.typicode.com/todos?_limit=${this.lastId}`;
 
   constructor() {}
 

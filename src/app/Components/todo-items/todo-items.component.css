@@ -1,3 +1,14 @@
+.todo-item {
+  background-color: rgb(194, 206, 240);
+  /* display: grid;
+  grid-template-columns: auto auto auto; */
+}
 .is-completed {
   text-decoration: line-through;
+  background-color: rgba(204, 204, 204, 0.924);
+}
+.delete-btn {
+  /* border-radius: 50%;
+  border: 0;
+  background-color: #e45353ed; */
 }
